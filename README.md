@@ -14,7 +14,7 @@ The system integrates Azure services with a local LLM (Ollama) to automate log a
 
 🏗 Architecture
 
-(architecture /ai-log-analyzer-architecture.png)  
+![Architecture Diagram](architecture/ai-log-analyzer-architecture.png)  
 
 
 ⚙️ How It Works  
@@ -28,19 +28,19 @@ The system integrates Azure services with a local LLM (Ollama) to automate log a
 📊 End-to-End Flow (Proof)  
 Azure Resources Overview
 
-![Azure Resources](images/azure -architecture-resources.png)
+![Azure Resources](images/azure-architecture-resources.png)
 
 Virtual Machine (Ollama Host)
 
-(images/Azure-VM.png)
+![Azure VM](images/Azure-VM.png)
 
 
 VNet and Subnet Configuration
 
-(images/Azure-VM-vmNET.png)  
+![Azure VNet](images/Azure-VM-vmNET.png)  
 
 
-(images/Azure-VM-vmNET-subnets.png)
+![Azure VNet Subnets](images/Azure-VM-vmNET-subnets.png)
 
 
 NSG Configuration (Port 11434)
@@ -54,51 +54,51 @@ NSG Configuration (Port 11434)
 🔍 Log Collection (KQL)
 
 
-(images/log-analytics-applogs.png)
+![Azure Log Analytics_logs](images/log-analytics-applogs.png)
 
-(images/log-analytics-aiinsights.png)
+![Azure Log Analytics_aiinsights](images/log-analytics-aiinsights.png)
 
 
 🤖 AI Analysis (Ollama)
 Ollama Running
 
 
-(images/ollama-version.png)
+![Ollama Version](images/ollama-version.png)
 
-(images/ollama-port.png)
+![Ollama Port](images/ollama-port.png)
 
 
 API Test
 
-(images/ollama-curl.png)
+![Ollama API_Test](images/ollama-curl.png)
 
 
 🧠 AI Output (Insights Table)
 
-(images/funcapp-appinsights-log-analytics.png)  
+![Azure Function_Insights_table](images/funcapp-appinsights-log-analytics.png)  
 
-(images/funcapp-appinsights-log-ollama.png)  
+![Azure Function_Insights_Ollama_log](images/funcapp-appinsights-log-ollama.png)  
 
 
 ⚙️ Function App Implementation
 Timer Trigger
 
-(images/functionapp-code-time-trigger-analytic.png)
+![Azure Function_Code_timer](images/functionapp-code-time-trigger-analytic.png)
 
 
 Prompt + Ollama API Call
 
-(images/functionapp-code-prompt-ollamaapi.png)
+![Azure Function_Code_timer](images/functionapp-code-prompt-ollamaapi.png)
 
 
 AIInsights Write-back
 
-(images/functionapp-code-aiinsights.png)
+![Azure Function_Code_AI_Writeback](images/functionapp-code-aiinsights.png)
 
 
 🔧 Configuration
 
-(images/functionapp_appsettings.png)
+![Azure Function_App_settings](images/functionapp_appsettings.png)
 
 
 🛠 Tech Stack  
