@@ -70,7 +70,7 @@ NSG Configuration (Port 11434)
 
 Ollama Running
 
-- Locally run LLM tool (Ollama), hosted on a Linux VM, showing version and port information
+- Locally run LLM tool (Ollama), hosted on Linux VM, showing version and port information
 
 ![Ollama Version](images/ollama-version.png)
 
@@ -79,15 +79,21 @@ Ollama Running
 
 API Test  
 
-- Performing a test run locally by calling the Ollama api to generate AI analysis  
+- Performed test run locally by calling Ollama api to generate AI analysis  
 
 ![Ollama API_Test](images/ollama-curl.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🧠 AI Output (Insights Table)
+🧠 AI Output (Insights Table)  
+
+📡 Function Execution & Observability  
+
+- Function execution logs showing successful log retrieval and processing
 
 ![Azure Function_Insights_table](images/funcapp-appinsights-log-analytics.png)  
+
+- API interaction with Ollama model, including request/response flow  
 
 ![Azure Function_Insights_Ollama_log](images/funcapp-appinsights-log-ollama.png)  
 
