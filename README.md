@@ -56,7 +56,7 @@ NSG Configuration (Port 11434)
 
 🔍 Log Collection (KQL)
 
-- Azure Log Analytics Workspace, two separate tables, one for collecting the application logs and the second table ingests AI Analysis from LLM, creating a feedback loop for monitoring and investigation
+- Azure Log Analytics Workspace, AppLogsAPI_CL table collects application logs and AIInsights_CL table ingests AI Analysis from LLM, creating a feedback loop for monitoring and investigation
 
 - Raw application logs collected from Azure Log Analytics
 
