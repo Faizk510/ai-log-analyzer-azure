@@ -14,7 +14,7 @@ The system integrates Azure services with a local LLM (Ollama) to automate log a
 
 🏗 Architecture
 
-architecture /ai-log-analyzer-architecture.png  
+(architecture /ai-log-analyzer-architecture.png)  
 
 
 ⚙️ How It Works  
@@ -32,21 +32,21 @@ Azure Resources Overview
 
 Virtual Machine (Ollama Host)
 
-images/Azure-VM.png
+(images/Azure-VM.png)
 
 
 VNet and Subnet Configuration
 
-images/Azure-VM-vmNET.png  
+(images/Azure-VM-vmNET.png)  
 
 
-images/Azure-VM-vmNET-subnets.png
+(images/Azure-VM-vmNET-subnets.png)
 
 
 NSG Configuration (Port 11434)
 
 
-images/Azure-VM-NSG.png
+(images/Azure-VM-NSG.png)
 
 
 
@@ -54,51 +54,51 @@ images/Azure-VM-NSG.png
 🔍 Log Collection (KQL)
 
 
-images/log-analytics-applogs.png
+(images/log-analytics-applogs.png)
 
-images/log-analytics-aiinsights.png
+(images/log-analytics-aiinsights.png)
 
 
 🤖 AI Analysis (Ollama)
 Ollama Running
 
 
-images/ollama-version.png
+(images/ollama-version.png)
 
-images/ollama-port.png
+(images/ollama-port.png)
 
 
 API Test
 
-images/ollama-curl.png
+(images/ollama-curl.png)
 
 
 🧠 AI Output (Insights Table)
 
-images/funcapp-appinsights-log-analytics.png  
+(images/funcapp-appinsights-log-analytics.png)  
 
-images/funcapp-appinsights-log-ollama.png  
+(images/funcapp-appinsights-log-ollama.png)  
 
 
 ⚙️ Function App Implementation
 Timer Trigger
 
-images/functionapp-code-time-trigger-analytic.png
+(images/functionapp-code-time-trigger-analytic.png)
 
 
 Prompt + Ollama API Call
 
-images/functionapp-code-prompt-ollamaapi.png
+(images/functionapp-code-prompt-ollamaapi.png)
 
 
 AIInsights Write-back
 
-images/functionapp-code-aiinsights.png
+(images/functionapp-code-aiinsights.png)
 
 
 🔧 Configuration
 
-images/functionapp_appsettings.png
+(images/functionapp_appsettings.png)
 
 
 🛠 Tech Stack  
