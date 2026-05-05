@@ -95,19 +95,10 @@ API Test
 
 ⚙️ Function App Implementation  
 
-Timer Trigger
+-  Core function logic is shown below. Full implementation available in the repository under /function-code.
 
-![Azure Function_Code_timer](images/functionapp-code-time-trigger-analytic.png)
+![Azure Function_app_code](images/functionapp-code.png)
 
-
-Prompt + Ollama API Call
-
-![Azure Function_Code_timer](images/functionapp-code-prompt-ollamaapi.png)
-
-
-AIInsights Write-back
-
-![Azure Function_Code_AI_Writeback](images/functionapp-code-aiinsights.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
