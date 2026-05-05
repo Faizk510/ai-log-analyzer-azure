@@ -37,9 +37,11 @@ The system integrates Azure services with a local LLM (Ollama) to automate log a
 
 Azure Resources Overview
 
-![Azure Resources](images/azure-architecture-resources.png)
+![Azure Resources](images/azure-architecture-resources.png)  
+
 
 ## 🖥 Infrastructure Setup (Azure VM (Ollama Host) + Networking) 
+
 
 ![Azure VM](images/Azure-VM.png)
 
