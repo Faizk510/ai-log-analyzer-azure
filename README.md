@@ -46,7 +46,7 @@ VNet and Subnet Configuration
 NSG Configuration (Port 11434)
 
 
-(images/Azure-VM-NSG.png)
+![Azure VNet NSG](images/Azure-VM-NSG.png)
 
 
 
@@ -137,8 +137,9 @@ AIInsights Write-back
 
 Function implementation available here:
 
-function-code/log_analyzer_functionapp.py
+function-code/log_analyzer_functionapp.py  
+
 👨‍💻 Author
 
-Faiz Qaiser Khan
+Faiz Qaiser Khan  
 Cloud Support Engineer | Azure | Production Operations
