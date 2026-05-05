@@ -39,21 +39,14 @@ Azure Resources Overview
 
 ![Azure Resources](images/azure-architecture-resources.png)
 
-Virtual Machine (Ollama Host)
+## 🖥 Infrastructure Setup (Azure VM (Ollama Host) + Networking) 
 
 ![Azure VM](images/Azure-VM.png)
 
 
-VNet and Subnet Configuration
+NSG Configuration (Port 11434)  
 
-![Azure VNet](images/Azure-VM-vmNET.png)  
-
-
-![Azure VNet Subnets](images/Azure-VM-vmNET-subnets.png)
-
-
-NSG Configuration (Port 11434)
-
+- NSG configured to allow inbound traffic on port 11434 for Ollama API access  
 
 ![Azure VNet NSG](images/Azure-VM-NSG.png)
 
@@ -61,8 +54,13 @@ NSG Configuration (Port 11434)
 
 🔍 Log Collection (KQL)
 
+- Azure Log Analytics Workspace, two separate tables, one for collecting the application logs and the second table ingests AI Analysis from LLM, creating a feedback loop for monitoring and investigation
 
-![Azure Log Analytics_logs](images/log-analytics-applogs.png)
+- Raw application logs collected from Azure Log Analytics
+
+![Azure Log Analytics_logs](images/log-analytics-applogs.png)  
+
+- AI-generated insights stored in custom AIInsights table
 
 ![Azure Log Analytics_aiinsights](images/log-analytics-aiinsights.png)
 
@@ -72,13 +70,16 @@ NSG Configuration (Port 11434)
 
 Ollama Running
 
+- Locally run LLM tool (Ollama), hosted on a Linux VM, showing version and port information
 
 ![Ollama Version](images/ollama-version.png)
 
 ![Ollama Port](images/ollama-port.png)
 
 
-API Test
+API Test  
+
+- Performing a test run locally by calling the Ollama api to generate AI analysis  
 
 ![Ollama API_Test](images/ollama-curl.png)
 
