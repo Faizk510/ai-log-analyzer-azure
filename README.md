@@ -29,7 +29,9 @@ This is directly applicable to cloud support and production operations roles.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🏗 Architecture
+🏗 Architecture  
+
+- End-to-end flow: Azure Function → Log Analytics → Ollama (VM) → AI Insights → Log Analytics  
 
 ![Architecture Diagram](architecture/ai-log-analyzer-architecture.png)  
 
